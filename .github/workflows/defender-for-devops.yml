@@ -36,6 +36,8 @@ jobs:
        categories: 'containers'
       # languages: string. Optional. A comma-separated list of languages to analyze. Example: 'javascript,typescript'. Defaults to all.
        tools: 'checkov, trivy'
+      env: 
+        GDN_TRIVY_ACTION: 'image'
 
       # Upload alerts to the Security tab - required for MSDO results to appear in the codeQL security alerts tab on GitHub (Requires GHAS)
     - name: Upload alerts to Security tab
