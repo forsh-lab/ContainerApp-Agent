@@ -38,6 +38,7 @@ jobs:
        tools: 'checkov, trivy'
       env: 
         GDN_TRIVY_ACTION: 'image'
+        GDN_TRIVY_TARGET: 'containerapp-agent'
 
       # Upload alerts to the Security tab - required for MSDO results to appear in the codeQL security alerts tab on GitHub (Requires GHAS)
     - name: Upload alerts to Security tab
