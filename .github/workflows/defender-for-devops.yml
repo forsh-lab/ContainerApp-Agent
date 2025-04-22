@@ -22,7 +22,6 @@ jobs:
 
       # Build docker image and checkout your code repository to scan
     - name: Build Docker Image
-      working-directory: ./agent
       run: docker build -t containerapp-agent .
     - uses: actions/checkout@v3
 
