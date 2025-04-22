@@ -20,9 +20,9 @@ jobs:
 
     steps:
 
-      # Checkout your code repository to scan
+      # Build docker image and checkout your code repository to scan
     - name: Build Docker Image
-      run: docker build -t containerApp-Agent ./agent
+      run: docker build -t containerapp-agent ./agent
     - uses: actions/checkout@v3
 
       # Run analyzers
