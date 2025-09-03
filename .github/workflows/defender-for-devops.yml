@@ -1,4 +1,4 @@
-name: MSDO
+name: Defender for DevOps Scan
 on:
   workflow_dispatch:
   pull_request:
