@@ -1,4 +1,4 @@
-FROM alpine:3.21.2
+FROM alpine:3.22.1
 ENV TARGETARCH=linux-x64
 ENV USER_ASSIGNED_CLIENT_ID=c83c31d2-488e-4a63-94b6-79b116d6047e
 
@@ -14,7 +14,7 @@ RUN python3 -m venv /opt/venv && \
 
 ENV PATH="/opt/venv/bin:$PATH"
 
-ARG TERRAFORM_VERSION=1.10.4
+ARG TERRAFORM_VERSION=1.12.1
 RUN wget --quiet https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
     unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
     mv terraform /usr/bin && \
